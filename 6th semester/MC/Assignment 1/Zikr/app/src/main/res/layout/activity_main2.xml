@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Main2">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="244dp"
+        android:layout_height="484dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/girl2"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageAlhumd"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:onClick="MoveAlhumd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/alhumd"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-99dp" />
+
+    <ImageView
+        android:id="@+id/imageAllah"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="56dp"
+        android:onClick="MoveAllah"
+        app:layout_constraintBottom_toTopOf="@+id/imageAlhumd"
+        app:srcCompat="@drawable/allah"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-82dp" />
+
+    <ImageView
+        android:id="@+id/imageSubhan"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:onClick="MoveSubhan"
+        app:layout_constraintBottom_toTopOf="@+id/imageAllah"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.172"
+        app:srcCompat="@drawable/subhan"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-82dp" />
+</android.support.constraint.ConstraintLayout>
